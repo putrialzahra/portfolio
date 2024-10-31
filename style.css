@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.9rem;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .main-container {
+    width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    color: #000000;
+  }
+  
+  .pre-title {
+    letter-spacing: 0.2rem;
+    color: gray;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  
+  .pre-title::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: rgb(24, 23, 23);
+    top: 50%;
+    left: 0;
+  }
+  
+  /* Logo dan nav menu */
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    transition: 0.5s ease-in-out;
+  
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 2rem;
+  }
+  
+  .logo a {
+    color: rgb(90, 163, 173);
+  }
+  
+  nav ul li a {
+    color: #000000;
+  }
+  
+  #home {
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .home-name {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0.5rem 0 1rem;
+  }
+  
+  .home-right img {
+    width: 250px;
+  }
+  
+  section {
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+  }
+  
+  #about {
+    margin-top: 200px;
+    background-color: #a3abac;
+    padding: 6rem 0;
+  }
+  
+  .section-title-about {
+    text-align: center;
+    margin: 1rem 0;
+  }
+  
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+  }
+  
+  .about {
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+  }
+  
+  .about h4 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .about-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(82, 150, 99);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #skills{
+    background-color: #e1e6e6;
+    padding: 6rem 0;
+  }
+  
+  .section-title-skills {
+    text-align: center;
+    margin: 1rem 0 4rem;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+  }
+  
+  .experience{
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .experience line{
+    padding: 0 0.7rem;
+  
+  }
+  
+  .experience .line div{
+    width: 2px;
+    height: 100%;
+    background-color: #000000;
+    position: relative;
+  }
+  
+  .experience-info{
+    margin: 0.3rem 0;
+  }
+  
+  .experience-date{
+    margin-bottom: 3rem;
+  }
+  
+  
+  .experience .line div::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #000000;
+    left: -6px;
+  }
+  
+  .skills-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+  }
+  
+  .skills-right{
+    line-height: 2rem;
+    padding: 0 1rem;
+  }
+  
+  /* Contact Section */
+  
+  #contact{
+    padding: 6rem ;
+  }
+  
+  .contact-form div{
+    margin-bottom: 1.3em;
+  
+  }
+  
+  .contact-head{
+    text-align: center;
+  
+  }
+  
+  
+  .contact-head p{
+    text-align: center;
+    margin-top: 1.4rem;
+    margin-bottom: 1.4rem;
+  }
+  
+  .contact-form input,
+  .contact-form textarea{
+    width: 100%;
+    padding: 0.7rem 1.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #ffffff;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder{
+    color: #000000;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus{
+    outline: none;
+    border: 1px solid rgb(182, 212, 218);
+  }
+  .btn-submit{
+    width: 100%;
+    padding: 0.7rem 1.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #000000;
+    font-family:Arial, Helvetica, sans-serif;
+    background: #000000;
+    color: #ffffff;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    resize: none;
+  }
+  
+  .btn-submit:hover{
+    background-color: rgb(82, 150, 99);
+    color: #ffffff;
+  }
+  
+  
+  
+  /* Footer */
+  
+  footer{
+    margin-bottom: 0;
+    text-align: center;
+    padding: 4rem 0;
+  }
+  .footer-icons{
+    margin-bottom: 1rem;
+    position: ce;
+  }
+  
+  .footer-icons a{
+    margin: 0 0.5rem;
+  }
+  
+  .footer-icons a:hover{
+    fill: rgb(82, 150, 99);
+  }
+  
+  
+  
